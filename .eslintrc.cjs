@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2020: true,
+    es2021: true,
     node: true,
   },
   parser: "@typescript-eslint/parser",
@@ -37,10 +37,8 @@ module.exports = {
       version: "detect",
     },
     "import/resolver": {
-      typescript: {},
       node: {
-        paths: ["src"],
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
+        paths: [path.resolve(__dirname)],
       },
     },
   },

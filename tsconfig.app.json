@@ -24,11 +24,14 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": "./src",
-    /*  "paths": {
-      "@components/*": [
-        "components/*"
+    "baseUrl": ".",
+    "paths": {
+      "src/*": [
+        "./src/*"
       ],
+    }
+    /* "baseUrl": "./src",
+    "paths": {
       "@pages/*": [
         "pages/*"
       ],
